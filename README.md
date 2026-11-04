@@ -60,7 +60,7 @@ An earlier fix addressed this by redirecting the original call through a small h
 
 ### Original English ROM Identification
 
-The original English ROM (extracted from Early Days Collection using Cowabunga) has the following MD5 hash:
+The original English ROM (extracted from Early Days Collection using [Cowabunga](https://github.com/Masquerade64/Cowabunga)) has the following MD5 hash:
 
 ```text
 308ed22c743901070fa520f982f0c95b
@@ -96,7 +96,7 @@ Runtime testing on additional language versions is recommended before considerin
 
 The patcher should reject unsupported or modified ROMs rather than attempting to patch them blindly.
 
-## Credits and Technical Notes
+## Technical Notes
 
 The VRAM synchronization fix is based on the safer graphics-transfer implementation found in the Japanese version of Yu-Gi-Oh MCGB.
 The LCD initialization fix was developed by examining the game's startup sequence and adding a small helper routine without disturbing the original initialization flow.
