@@ -1,4 +1,4 @@
-# Yu-Gi-Oh MCGB — Graphics and LCD Fix
+# Yu-Gi-Oh! MCGB — Universal Graphics Fix
 
 ## Overview
 
@@ -66,8 +66,7 @@ The original English ROM (extracted from Early Days Collection using [Cowabunga]
 308ed22c743901070fa520f982f0c95b
 ```
 
-The patcher should identify compatible ROMs using the expected code signatures and layout, rather than relying exclusively on the English ROM's MD5 hash.
-This is important because localized versions naturally have different hashes despite sharing the relevant executable code.
+Your IPS patcher should identify compatible ROMs using the expected code signatures and layout, rather than relying exclusively on the English ROM's MD5 hash.
 
 ## Language Compatibility
 
@@ -102,7 +101,6 @@ The VRAM synchronization fix is based on the safer graphics-transfer implementat
 The LCD initialization fix was developed by examining the game's startup sequence and adding a small helper routine without disturbing the original initialization flow.
 
 And with this fix, this officially translated ROM is no longer confined to inaccurate emulators or being played inside the EDC frontend!
-
 
 ## AI Disclosure
 
