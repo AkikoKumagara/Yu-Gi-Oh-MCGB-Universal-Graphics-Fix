@@ -38,7 +38,7 @@ The Japanese routine was adapted into the corresponding routine in the English a
 The replacement occupies the original routine's space at ROM offset `0x27EC`. Any remaining unused space in that region is filled with NOP instructions (`$00`).
 This preserves the surrounding code layout and avoids moving other game routines.
 
-## 2. Early Startup LCD Initialization
+### 2. Early Startup LCD Initialization
 
 The original startup routine called the initialization code at `$0A11` without first ensuring that the LCD was enabled.
 This could interfere with the early text initialization and display.
