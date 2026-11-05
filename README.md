@@ -46,12 +46,12 @@ An earlier fix addressed this by redirecting the original call through a small h
 
 ## Patch Details
 
-<p align="center">Before: <br>
+Before: <br>
   <img src="https://github.com/AkikoKumagara/Yu-Gi-Oh-MCGB-Universal-Graphics-Fix/blob/main/screenshots/before.png" />
-</p>
-<p align="center">After: <br>
+
+After: <br>
   <img src="https://github.com/AkikoKumagara/Yu-Gi-Oh-MCGB-Universal-Graphics-Fix/blob/main/screenshots/after.png" />
-</p>
+
 
 | Item | Value |
 |---|---|
