@@ -1,4 +1,4 @@
-# Yu-Gi-Oh MCGB — Graphics and LCD Fix
+# Yu-Gi-Oh! MCGB — Universal Graphics Fix
 
 ## Overview
 
@@ -46,6 +46,13 @@ An earlier fix addressed this by redirecting the original call through a small h
 
 ## Patch Details
 
+<p align="center">Before: 
+  <img src="https://github.com/AkikoKumagara/Yu-Gi-Oh-MCGB-Universal-Graphics-Fix/blob/main/screenshots/before.png" />
+</p>
+<p align="center">After:
+  <img src="https://github.com/AkikoKumagara/Yu-Gi-Oh-MCGB-Universal-Graphics-Fix/blob/main/screenshots/after.png" />
+</p>
+
 | Item | Value |
 |---|---|
 | Game | Yu-Gi-Oh MCGB |
@@ -60,14 +67,13 @@ An earlier fix addressed this by redirecting the original call through a small h
 
 ### Original English ROM Identification
 
-The original English ROM (extracted from Early Days Collection using Cowabunga) has the following MD5 hash:
+The original English ROM (extracted from Early Days Collection using [Cowabunga](https://github.com/Masquerade64/Cowabunga)) has the following MD5 hash:
 
 ```text
 308ed22c743901070fa520f982f0c95b
 ```
 
-The patcher should identify compatible ROMs using the expected code signatures and layout, rather than relying exclusively on the English ROM's MD5 hash.
-This is important because localized versions naturally have different hashes despite sharing the relevant executable code.
+Your IPS patcher should identify compatible ROMs using the expected code signatures and layout, rather than relying exclusively on the English ROM's MD5 hash.
 
 ## Language Compatibility
 
@@ -96,13 +102,12 @@ Runtime testing on additional language versions is recommended before considerin
 
 The patcher should reject unsupported or modified ROMs rather than attempting to patch them blindly.
 
-## Credits and Technical Notes
+## Technical Notes
 
 The VRAM synchronization fix is based on the safer graphics-transfer implementation found in the Japanese version of Yu-Gi-Oh MCGB.
 The LCD initialization fix was developed by examining the game's startup sequence and adding a small helper routine without disturbing the original initialization flow.
 
 And with this fix, this officially translated ROM is no longer confined to inaccurate emulators or being played inside the EDC frontend!
-
 
 ## AI Disclosure
 
