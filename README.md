@@ -44,6 +44,12 @@ The original startup routine called the initialization code at `$0A11` without f
 This could interfere with the early text initialization and display.
 An earlier fix addressed this by redirecting the original call through a small helper routine.
 
+### 3. Corrections to VRAM Sync
+
+In the version of the ROM shipped with EDC, there are issues with VRAM synchronization that cause corruption or missing glyphs to appear on the stats screen.
+This was resolved by using some free space to modify the game's numeric tile-writing routine ($0C8C) with more reliability.
+Previously, tile IDs were written to VRAM without checking that the PPU allowed VRAM access; because these writes would take place during PPU mode 3, things broke.
+
 ## Patch Details
 
 Before: <br>
