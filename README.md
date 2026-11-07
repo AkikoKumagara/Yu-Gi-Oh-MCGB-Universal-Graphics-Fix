@@ -101,7 +101,7 @@ Runtime testing on additional language versions is recommended before considerin
 ## Applying the Patch
 
 1. Make a backup of your original ROM.
-2. Use the supplied patcher or IPS patch with a compatible, unmodified ROM.
+2. Use an IPS patching utility in conjunction with the provided IPS patch and a compatible, unmodified ROM.
 3. Allow the patcher to verify the ROM before making changes.
 4. Open the patched ROM in a Game Boy Color emulator or on supported hardware.
 5. Verify that startup text displays correctly and that graphics remain intact during gameplay.
